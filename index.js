@@ -32,7 +32,7 @@
   window.onload = function(){
     curr = "home";
     for(var i = 0; i < categories.length; i++){
-      hide(categories[i]);
+      hide("sec-" + categories[i]);
     }
     show("home");
     for(var i = 0; i < categories.length; i++){
