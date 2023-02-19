@@ -4,6 +4,7 @@
   var categories = ["home", "publications", "teaching", "industry", "cv",
                     "contact"];
   function load(next){
+    console.log(next);
     hide(curr);
     show(next);
   }
@@ -40,7 +41,7 @@
       //c(str).onclick = function(){load("sec-" + categories[i])};
       var target = "sec-" + categories[i];
       //c(str).getElementsByTagName("a")[0].onlick = "(function(){console.log(target); load(\"" + target + "\")})();";
-      c(str).getElementsByTagName("a")[0].onclick = function(){console.log(target); load(target)};
+      c(str).getElementsByTagName("a")[0].onclick = "function(){load(\"" + target + "\")}"; //function(){load(target)};
     }
   };
 })();
