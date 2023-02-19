@@ -30,11 +30,11 @@
     return document.querySelectorAll(selector);
   }
   window.onload = function(){
-    curr = "home";
+    curr = "sec-home";
     for(var i = 0; i < categories.length; i++){
       hide("sec-" + categories[i]);
     }
-    show("home");
+    show("sec-home");
     for(var i = 0; i < categories.length; i++){
       var str = "menu-" + categories[i];
       //c(str).onclick = function(){load("sec-" + categories[i])};
