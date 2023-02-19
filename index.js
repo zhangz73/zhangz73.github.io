@@ -4,7 +4,6 @@
   let categories = ["home", "publications", "teaching", "industry", "cv",
                     "contact"];
   function load(next){
-    console.log(next);
     hide(curr);
     show(next);
   }
@@ -38,10 +37,8 @@
     show("sec-home");
     for(let i = 0; i < categories.length; i++){
       let str = "menu-" + categories[i];
-      //c(str).onclick = function(){load("sec-" + categories[i])};
       let target = "sec-" + categories[i];
-      //c(str).getElementsByTagName("a")[0].onlick = "(function(){console.log(target); load(\"" + target + "\")})();";
-      c(str).getElementsByTagName("a")[0].onclick = function(){load("sec-" + categories[i])};
+      c(str).getElementsByTagName("a")[0].onclick = function(){load(target)};
     }
   };
 })();
