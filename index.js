@@ -39,7 +39,7 @@
       var str = "menu-" + categories[i];
       //c(str).onclick = function(){load("sec-" + categories[i])};
       var target = "sec-" + categories[i];
-      c(str).getElementsByTagName("a")[0].href = "javascript: (function(){load(\"" + target + "\")})();";
+      c(str).getElementsByTagName("a")[0].onlick = "javascript: (function(){load(\"" + target + "\")})();";
     }
   };
 })();
