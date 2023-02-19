@@ -1,0 +1,20 @@
+.hubble_stretched_row{
+	margin-right:0;
+	margin-left:0;
+}
+
+.page-wrapper{
+	&.has-vc{
+		.page-contents{
+			padding-bottom:0;
+			> .container{
+				width:auto !important;
+			}
+		}
+	}
+	&.no-head{
+		.page-contents{
+			padding-top:0;
+		}
+	}
+}
