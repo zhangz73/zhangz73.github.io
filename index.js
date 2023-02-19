@@ -1,7 +1,7 @@
 /*global fetch*/
 (function(){
-  var curr = null;
-  var categories = ["home", "publications", "teaching", "industry", "cv",
+  let curr = null;
+  let categories = ["home", "publications", "teaching", "industry", "cv",
                     "contact"];
   function load(next){
     console.log(next);
@@ -10,13 +10,13 @@
   }
   function show(name){
     curr = name;
-    var list = qsa("." + name);
+    let list = qsa("." + name);
     for(let i = 0; i < list.length; i++){
       list[i].classList.remove("hidden");
     }
   }
   function hide(name){
-    var list = qsa("." + name);
+    let list = qsa("." + name);
     for(let i = 0; i < list.length; i++){
       list[i].classList.add("hidden");
     }
@@ -32,14 +32,14 @@
   }
   window.onload = function(){
     curr = "sec-home";
-    for(var i = 0; i < categories.length; i++){
+    for(let i = 0; i < categories.length; i++){
       hide("sec-" + categories[i]);
     }
     show("sec-home");
-    for(var i = 0; i < categories.length; i++){
-      var str = "menu-" + categories[i];
+    for(let i = 0; i < categories.length; i++){
+      let str = "menu-" + categories[i];
       //c(str).onclick = function(){load("sec-" + categories[i])};
-      var target = "sec-" + categories[i];
+      let target = "sec-" + categories[i];
       //c(str).getElementsByTagName("a")[0].onlick = "(function(){console.log(target); load(\"" + target + "\")})();";
       c(str).getElementsByTagName("a")[0].onclick = function(){load("sec-" + categories[i])};
     }
