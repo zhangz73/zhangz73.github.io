@@ -40,7 +40,7 @@
       //c(str).onclick = function(){load("sec-" + categories[i])};
       var target = "sec-" + categories[i];
       //c(str).getElementsByTagName("a")[0].onlick = "(function(){console.log(target); load(\"" + target + "\")})();";
-      c(str).getElementsByTagName("a")[0].onlick = function(){console.log(target); load(target)};
+      c(str).getElementsByTagName("a")[0].onclick = function(){console.log(target); load(target)};
     }
   };
 })();
