@@ -1,8 +1,7 @@
 /*global fetch*/
 (function(){
   let curr = null;
-  let categories = ["home", "publications", "teaching", "industry", "leadership", "cv",
-                    "contact"];
+  let categories = ["home", "publications", "teaching", "industry", "leadership", "cv", "contact"];
   function load(next){
     hide(curr);
     show(next);
@@ -61,9 +60,10 @@
         c(str).getElementsByTagName("a")[0].onclick = function(){load(target)};
       }
     }
+    $("menu-item-cv").onclick = function(){load("sec-cv")};
     updateCVList("contract");
-    $("menu-item-cv").onmouseover = function(){updateCVList("expand")};
-    $("cv-long-link").onclick = function(){load("sec-cv"); swapCV("long")};
-    $("cv-short-link").onclick = function(){load("sec-cv"); swapCV("short")};
+//    $("menu-item-cv").onmouseover = function(){updateCVList("expand")};
+//    $("cv-long-link").onclick = function(){load("sec-cv"); swapCV("long")};
+//    $("cv-short-link").onclick = function(){load("sec-cv"); swapCV("short")};
   };
 })();
