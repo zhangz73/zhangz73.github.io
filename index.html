@@ -729,29 +729,30 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
         <div class="container">
         
         <h3><b>Meta:</b></h3>
-        <p><b>Machine Learning Intern</b>&emsp;&emsp;May 2026 - Aug 2026
+        <p><b>Research Intern, Machine Learning (PhD)</b>&emsp;&emsp;May 2026 - Aug 2026
             <ul>
-                <li>Built an LLM-based advertiser simulation framework to model budget-allocation decisions under limited direct competitor observability, using advertiser trajectories and personas to capture responses to relative positioning.</li>
-                <li>Developed a counterfactual evaluation framework to estimate advertiser responses to alternative signal strategies when historical data capture only realized decisions.</li>
-                <li>Designed an interpretable LLM-augmented reinforcement learning method over fixed-structure decision-tree policies to support policy optimization under interpretability and low-latency serving requirements.</li>
-                <li>Improved simulation throughput and model-serving efficiency through parallelization and caching.</li>
+                <li>Defined the research approach for an open-ended pilot project to select truthful supplemental campaign-performance signals for third-party AI advisers allocating advertiser budgets across publishers.</li>
+                <li>Built a market simulator for counterfactual scenarios using literature-based transition equations with parameters calibrated to campaign data; compared simulated and observed trajectory distributions using KS and moment tests. Modeled unknown competitor performance using scenarios of Meta's performance relative to other publishers.</li>
+                <li>Built an agentic system that uses multi-round adversarial debate among LLM agents role-playing domain experts to design interpretable decision graphs; trained graph parameters with LLM-guided updates and policy-gradient RL for deterministic, low-latency serving.</li>
+                <li>Reduced advertiser budget cuts or increased allocations to Meta in 20% of evaluated simulation scenarios compared with a no-steering baseline.</li>
+                <li>Accelerated simulation by ~6x and cut model-serving costs to ~1/20 of baseline through parallelization and caching; the team adopted the simulator and steering-policy outputs for production integration.</li>
             </ul>
         </p>
         
         <h3><b>Akamai Technologies:</b></h3>
-        <p><b>Research Intern (Mapping)</b>&emsp;&emsp;Jun 2025 - Aug 2025
+        <p><b>Research Intern, Mapping</b>&emsp;&emsp;Jun 2025 - Aug 2025
             <ul>
-                <li>Studied traffic patterns of content delivery networks using stochastic modeling.</li>
-                <li>Implemented a simulation pipeline for machine utilization under various DNSP load-balancing policies.</li>
-                <li>Designed and evaluated load-balancing policies to improve tail latency for end users.</li>
+                <li>Developed a stochastic CDN traffic simulator to assess machine utilization and tail latency under candidate DNS load-balancing policies, modeling connection arrivals, request timing, and joint distributions of request counts, workloads, and connection lifetimes.</li>
+                <li>Characterized five traffic categories from sampled production logs using connection-level features and k-means clustering; analyzed how traffic patterns and extreme workloads affect simulated machine utilization.</li>
+                <li>Found agreement between simulated and observed mean machine utilization; evaluated existing load-balancing policies to establish baselines for future policy comparisons.</li>
             </ul>
         </p>
         
         <h3><b>Aetna at CVS Health:</b></h3>
         <p><b>Data Scientist</b>&emsp;&emsp;Jun 2021 - Jul 2022
             <ul>
-                <li>Built a distributed Monte Carlo simulation pipeline for member-disenrollment estimation, completing 100K+ simulations on datasets with millions of rows within one hour through parallelization and vectorization.</li>
-                <li>Developed optimization and machine-learning methods for campaign experimental design, risk-cohort identification, and member churn analysis using quadratic programming, Dask, Hive, and supervised learning.</li>
+                <li>Built a distributed Monte Carlo simulation pipeline to estimate member disenrollment, completing 100K+ simulations on datasets with millions of rows within one hour through parallelization and vectorization.</li>
+                <li>Developed optimization and machine-learning methods for experimental design of campaigns, risk-cohort identification, and churn analysis using quadratic programming, Dask, Hive, and supervised learning.</li>
                 <li>Built automated data, modeling, and reporting pipelines and developed NLP analyses of sales-call transcripts.</li>
             </ul>
         </p>
